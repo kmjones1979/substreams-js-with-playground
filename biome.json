@@ -1,0 +1,43 @@
+{
+  "files": {
+    "ignore": [
+      ".direnv/",
+      ".cache/",
+      ".vercel/",
+      ".next/",
+      "dist/",
+      "proto/",
+      "coverage/",
+      "out/",
+      "examples/example-node-manifest/substream",
+      "pnpm-lock.yaml",
+      "tsconfig.json",
+      "tsconfig.*.json"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "linter": {
+    "rules": {
+      "all": true,
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noRedundantUseStrict": "off"
+      },
+      "nursery": {
+        "useImportRestrictions": "off"
+      },
+      "style": {
+        "useNamingConvention": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  }
+}

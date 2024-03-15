@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src/**/*.ts"],
+  "references": [
+    {
+      "path": "../../packages/core/tsconfig.json"
+    }
+  ],
+  "compilerOptions": {
+    "outDir": "../../.cache/tsc/examples/example-sea",
+    "types": ["node"],
+    "lib": ["DOM", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "paths": {
+      "@substreams/core": ["../../packages/core/src/index.js"],
+      "@substreams/core/proto": ["../../packages/core/src/proto.js"]
+    }
+  }
+}

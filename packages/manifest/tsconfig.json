@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "references": [
+    {
+      "path": "../core/tsconfig.json"
+    }
+  ],
+  "compilerOptions": {
+    "outDir": "../../.cache/tsc/packages/manifest",
+    "paths": {
+      "@substreams/core": ["../core/src/index.js"],
+      "@substreams/core/proto": ["../core/src/proto.js"]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "compilerOptions": {
+    "outDir": "../../.cache/tsc/packages/core",
+    "paths": {
+      "@substreams/testutils": ["./tests/index.js"]
+    }
+  }
+}
